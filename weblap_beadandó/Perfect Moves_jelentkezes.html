@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Perfect Moves Tánciskola weboldala">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="author" content="Zsámbokréty Zsófia">
+    <link rel="icon" type= "image/x-icon" href="icon.png">
+    <title>Perfect Moves Tánciskola</title>
+</head>
+
+<body>
+    <header>
+        <p><img src="logo2.png" alt="logo" class="logokep"></p><br>
+        <h3>Jelentkezés</h3>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Perfect Moves_index.html">Főoldal</a></li>
+                <li><a href="Perfect Moves_tanfolyamok.html">Tanfolyamok</a></li>
+                <li><a   href="Perfect Moves_orarend.html">Órarend és áraink</a></li>
+                <li><a class="active" href="#">Jelentkezés</a></li>
+            </ul>
+        </nav>
+       
+       
+        <article>
+            <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php">  
+                <h1>Jelentkezési űrlap</h1> 
+                <h5>Ha szeretne Ön is a tánc csodálatos élményével meggazdagodni, akkor az alábbi űrlap kítöltésével jelentkezhet kurzusainkra.</h5> 
+                <label>Név: <input type="text" required  name="nev" size="40" ></label><br>
+               
+                <br>
+                <label>Telefonszám: <input type="text" required  name="telszam" value="+36-" ></label><br><br>
+                <label>Email cím: <input type="email" required name="email" value="" ></label><br>
+                <br>
+                <label>Melyik táncműfajt választja?
+                    <select name="mufaj[]" multiple required size="5">
+                        <option value="hiphop">Hip-hop</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="balett">Balett</option> 
+                        <option value="tarsas">Társastánc</option> 
+                        <option value="salsa">Salsa</option> 
+                    </select> 
+                </label><br><br>
+                Korosztály:<br><br>
+                <label><input type="radio"  name="kor" value="ovi">Óvodás kor<br></label>
+                <label><input type="radio"  name="kor" value="hat">6-10 éves <br></label>
+                <label><input type="radio" name="kor" value="tiz">10-14 éves<br></label>
+                <label><input type="radio" name="kor" value="tiznegy">14-18 éves<br></label>
+                <label><input type="radio" name="kor" value="felnott">Felnőtt<br></label>
+                <br><br>
+                Kezdő vagy haladó szinten van jelenleg a kiválasztott műfajokból?<br>
+                <label><input type="radio"  name="kivalaszt" checked value="kezdo">kezdő <br></label>
+                <label><input type="radio" name="kivalaszt" value="halado">haladó <br></label>
+                <br><br>
+                <label><input type="submit" value="Elküldés"></label>
+                <label><input type="reset" value="Alaphelyzet"> </label><br>
+        </article>
+        
+      
+    
+    </div>
+    <footer>Nem egy valós tánciskola. Az oldal tanulmányi célú.</footer>
+</body>
+
+</HTML>
